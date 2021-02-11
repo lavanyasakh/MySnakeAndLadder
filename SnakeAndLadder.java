@@ -7,31 +7,29 @@ public class SnakeAndLadder {
 		System.out.println("Player Initial position is =" +player1Position);
 		System.out.println("Please Start The Game");
 		//Roll The Die To Get A Number From 1 To 6
-		int diceRoll = (int)Math.floor(Math.random() *10) %6+1;
+		while (player1Position != 100)
+		{
+			int diceRoll = (int)Math.floor(Math.random() *10) %6+1;
 
-		//Player Option Check
-		int position = (int)Math.floor(Math.random() *10) %3;
-		switch (position) {
-			case IS_LADDER:
-				System.out.println("Is Ladder");
-				player1Position += diceRoll;
-				break;
-			case IS_SNAKE:
-				System.out.println("Is Snake");
-				player1Position -= diceRoll;
-				if (player1Position < 0)
-				{
-					int data = 0;
-					player1Position = data;
-				}
-				else
+			//Player Option Check
+			int position = (int)Math.floor(Math.random() *10) %3;
+			switch (position) {
+				case IS_LADDER:
+					System.out.println("Is Ladder");
+					player1Position += diceRoll;
+					break;
+				case IS_SNAKE:
+					System.out.println("Is Snake");
+					player1Position -= diceRoll;
+					if (player1Position < 0)
+						player1Position = 0;
+							break;
+				default:
+					System.out.println("No Play");
 					player1Position = player1Position;
-				break;
-			default:
-				System.out.println("No Play");
-				player1Position = player1Position;
+			}
+			System.out.println("player Position is =" +player1Position);
 		}
-		System.out.println("player Position is =" +player1Position);
 		
 		
 	}
