@@ -20,13 +20,8 @@ public class SnakeAndLadder {
 				System.out.println("Is Snake");
 				player1Position -= diceRoll;
 				if (player1Position < 0)
-				{
-					int data = 0;
-					player1Position = data;
-				}
-				else
-					player1Position = player1Position;
-				break;
+					player1Position = 0;
+				   break;
 			default:
 				System.out.println("No Play");
 				player1Position = player1Position;
