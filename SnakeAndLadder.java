@@ -35,7 +35,7 @@ public class SnakeAndLadder {
 			count1++;
 			System.out.println("Player Position After Every Dice Roll :" +player1Position);
 			}
-         System.out.println("Number Of Times Dice Rolled = " +count1);
+			System.out.println("Number Of Times Dice Rolled = " +count1);
 			System.out.println("player1 Position is =" +player1Position);
 			if (player1Position == 100)
 				break;
@@ -63,7 +63,7 @@ public class SnakeAndLadder {
 			count2++;
 			System.out.println("Player Position After Every Dice Roll :" +player2Position);
 			}
-         System.out.println("Number Of Times Dice Rolled = " +count2);
+			System.out.println("Number Of Times Dice Rolled = " +count2);
 			System.out.println("player2 Position is =" +player2Position);
 			if (player2Position == 100)
 				break;
